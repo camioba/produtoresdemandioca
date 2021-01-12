@@ -1,6 +1,30 @@
+.hamburger {
+    height: 0px auto;
+    width: 0px auto;
+    padding: 0px auto;
+    display: block;
+    z-index: 1;
+}
+  
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
 .menu, .submenu{
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
     list-style: none;
-    background: red;
+    background: rgb(200, 200, 200, 0.5);   
+    z-index: 1;
+}
+
+.menu {
+    padding-left: 0px;
+    position: fixed;
+    width: 100vw;
 }
 
 .menu li {
@@ -15,16 +39,18 @@
     text-decoration: none;
     display: block;
     padding: 20px;
+    color: white;
+    
 
 }
 .submenu {
     display: none;
     position: absolute;
-    min-width: 150px;
+    min-width: 183px;
 }
 
 .menu > li:hover {
-    background: pink;
+    background: rgba(184, 27, 22, 0.6);
 }
 
 .menu li:hover > .submenu {
@@ -32,12 +58,8 @@
 }
 
 .submenu li:hover {
-    background: pink;
+    background:rgba(184, 27, 22, 0.6);
 }
-
-
-
-
 
 .clearfix:after{
     content: '.';
@@ -49,3 +71,98 @@
     visibility: hidden;
     overflow: hidden;
 }
+
+.triangle-demo {
+    border-top: 0 solid white;
+    border-left: 0 solid black; 
+    border-bottom: 0 solid black;
+    border-right: 0 solid black;
+    border-top-width: 7px;
+    border-left-width: 7px;
+    border-right-width: 7px;
+    border-bottom-width: 7px;
+    width: 0; height: 0;
+    border-bottom-color: transparent; 
+    border-left-color: transparent; 
+    border-right-color: transparent;
+    margin: -13px 0px 0px 130px;
+}  
+
+.fas, .fab {
+    font-size: 1.4em;
+    color: white;
+    position: absolute;
+   
+   
+}
+
+.fa-facebook {
+    right: 23%;
+}
+
+.fa-instagram {
+    right: 19%;
+}
+
+.fa-twitter {
+    right: 15%;
+}
+
+.banner {
+    z-index: 0;
+    width: 100vw;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.banner img {
+    top: 0px;
+    width: 100vw;
+    
+}
+
+.txtdir {
+    display: block;
+    float: right;
+    margin: 10x 0px;   
+}
+
+.txtesq {
+    display: block;
+    float: left;
+    margin: 10px 0px;   
+    text-align: right;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    
+}
+
+h1 {
+    font-family: 'Scada', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+h2 {
+
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 30px;
+    margin: 10px 0px;
+}
+
+.h2dir {
+    margin-right: 50px;
+}
+
+.h2esq {
+    margin-left: 50px;
+}
+
