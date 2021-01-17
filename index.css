@@ -111,41 +111,50 @@
 .banner {
     z-index: 0;
     width: 100vw;
-    display: block;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
+    background-color: none;
 }
 
 .banner img {
     top: 0px;
-    width: 100vw;
+    width: 100%;
     
 }
 
+.txt-container {
+    background-color: none;
+    height: 100%;
+    padding: 60px 0px;
+    margin: 0px;
+}
+
 .txtdir {
-    display: block;
     float: right;
-    margin: 10x 0px;   
+    padding: 15px 0px; ;
+    background-color: none;
 }
 
 .txtesq {
-    display: block;
     float: left;
-    margin: 10px 0px;   
+    padding: 15px 0px;   
     text-align: right;
+    background: none;
 }
 
 hr {
     height: 2px;
     background-color: black;
+    border: black;
     
 }
 
 h1 {
     font-family: 'Scada', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     text-transform: uppercase;
     margin: 10px 0px;
+    background-color: none;
 }
 
 h2 {
@@ -158,11 +167,116 @@ h2 {
     margin: 10px 0px;
 }
 
-.h2dir {
+h3 {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 30px;
+    color: none;
+    padding: 10px 10px;
+}
+
+h4 {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    text-align: left;
+    position: absolute;
+    display: block;
+    
+}
+
+.margin-dir {
     margin-right: 50px;
 }
 
-.h2esq {
+.margin-esq {
     margin-left: 50px;
 }
 
+
+
+.img-container1 {
+    padding: 0px 0px;
+    height: 100vh;
+    background-color: yellow;
+    align-items: center;
+    
+   
+}
+
+.img {
+    z-index: 0;
+
+    position: absolute;
+    background: red;
+}
+
+
+.img img {
+    width: 100%;
+}
+
+
+.txtflu-container1 {
+    background-color:  rgba(200, 200, 200);
+    border: solid 0px black;  
+    align-items: center;
+    position: absolute;
+    padding: 10px 10px;
+    top: 80%;
+    left: 70%;
+
+}
+
+.txtflu-container1 > h1, .txtflu-container1 > h2, .txtflu-container1 > h3 {
+    text-align: center;
+    margin: 10px;
+}
+ 
+.img-container2 {
+    
+    padding: 0px 0px;
+    height: 100%;
+    background-color: pink;
+    align-items: center;
+   
+}
+
+
+
+
+.txtflu-container2 {
+    background-color:  rgba(200, 200, 200);
+    border: solid 0px black;  
+    align-items: center;
+    position: absolute;
+    padding: 10px 10px;
+    
+
+}
+
+.txtflu-container2 > h1, .txtflu-container2 > h2, .txtflu-container2 > h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.imgesq {
+    margin-left: 7%;
+    float: left;
+    background: red;
+}
+
+.imgdir {
+    margin-right: 7%;
+    float: right;
+}
+
+.imgesq img, .imgdir img {
+    width: 100%;
+}
