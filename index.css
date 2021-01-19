@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 .hamburger {
     height: 0px auto;
     width: 0px auto;
@@ -14,7 +18,7 @@
 .menu, .submenu{
     font-family: 'Mukta', sans-serif;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     text-transform: uppercase;
     list-style: none;
     background: rgb(200, 200, 200, 0.5);   
@@ -38,7 +42,7 @@
 .menu a{
     text-decoration: none;
     display: block;
-    padding: 20px;
+    padding: 1.2em;
     color: white;
     
 
@@ -46,7 +50,7 @@
 .submenu {
     display: none;
     position: absolute;
-    min-width: 183px;
+    min-width: 11.4em;
 }
 
 .menu > li:hover {
@@ -110,16 +114,14 @@
 
 .banner {
     z-index: 0;
-    width: 100vw;
-    margin-bottom: 0px;
-    background-color: none;
-}
-
-.banner img {
-    top: 0px;
-    width: 100%;
+    height: 100%;
+    background-image: url("banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: right center;
     
 }
+
 
 .txt-container {
     background-color: none;
@@ -132,6 +134,8 @@
     float: right;
     padding: 15px 0px; ;
     background-color: none;
+    font-size: 1rem;
+    
 }
 
 .txtesq {
@@ -139,12 +143,14 @@
     padding: 15px 0px;   
     text-align: right;
     background: none;
+    font-size: 1rem;
 }
 
 hr {
-    height: 2px;
+    height: 4px;
     background-color: black;
     border: black;
+    
     
 }
 
@@ -153,7 +159,7 @@ h1 {
     font-size: 3em;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 10px 0px;
+    margin: 0.2em 0px;
     background-color: none;
 }
 
@@ -161,10 +167,10 @@ h2 {
 
     font-family: 'Mukta', sans-serif;
     font-size: 1.3em;
-    font-weight: bold;
-    letter-spacing: normal;
-    line-height: 30px;
-    margin: 10px 0px;
+    font-weight: normal;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    margin: 0.2em 0px;
 }
 
 h3 {
@@ -175,6 +181,7 @@ h3 {
     line-height: 30px;
     color: none;
     padding: 10px 10px;
+
 }
 
 h4 {
@@ -200,7 +207,88 @@ h4 {
 }
 
 
+.img-container {
+    padding: 0px 0px;
+    margin-top: 30px;
+    height: 70%;
+    background-color: none;
+    align-items: center;
+    position: relative;
+    display: block;
+   
+}
 
+
+.img {
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100%;
+    background-image: url("produtores.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: yellow; 
+}
+
+.txt {
+    
+    padding: 1rem 1rem; 
+    text-align: left;
+    background: yellow;
+    border: black solid 2px;
+  
+    min-width: 15rem;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    left: 5%;
+    top: 50%;
+}
+
+
+.txt > h1 {
+    font-size: 2em;
+    
+}
+
+.imgesq {
+    margin-left: 50px;
+    float: left;
+    height: 400px;
+    background-image: url("produtores.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.img img {
+    width: 100%;
+}
+
+.imgesq img, .imgdir img {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.txtflu {
+    padding: 1rem 1rem; 
+    text-align: left;
+    background: yellow;
+    border: black solid 2px;
+    max-width: 30rem;
+    min-width: 5rem;
+    
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    top:300px;
+}
+
+
+
+/*
 .img-container1 {
     padding: 0px 0px;
     height: 100vh;
@@ -209,19 +297,6 @@ h4 {
     
    
 }
-
-.img {
-    z-index: 0;
-
-    position: absolute;
-    background: red;
-}
-
-
-.img img {
-    width: 100%;
-}
-
 
 .txtflu-container1 {
     background-color:  rgba(200, 200, 200);
@@ -266,17 +341,4 @@ h4 {
     margin: 10px;
 }
 
-.imgesq {
-    margin-left: 7%;
-    float: left;
-    background: red;
-}
 
-.imgdir {
-    margin-right: 7%;
-    float: right;
-}
-
-.imgesq img, .imgdir img {
-    width: 100%;
-}
