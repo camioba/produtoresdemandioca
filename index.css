@@ -283,15 +283,23 @@ h4 {
 }
 
 
-.img-container {    
-    padding: 0px;
-    
+.container-col100 {    
+    padding: 0px 50px;
     height: 70%;
-    background-color: none;
+  
+}
+
+.container-col50 {    
+    padding: 0px 30px;
+    
    
-    position: relative;
-    display: block;
+}
+.container-col25 {    
+    padding: 0px 30px;
+    height: 70%;
    
+    
+ 
 }
 
 
@@ -328,45 +336,37 @@ h4 {
     
 }
 
-
+.esq {
+    float: left;
+    
+}
 
 .imgesq {
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
-    float: left;
-    height: 100%;
-    background-image: none;
+    margin: 10px 20px;
+    padding: 0px 0px;
+    height: 315px;
+    background-image: url("produtores.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 500px;
     background-position: center;
     
-    position: relative;
+    
     display: block;
     
     
 }
 
-.imgesq img, .imgdir img {
-    width: 100%;
-    margin: 0px;  
-
-}
-
-.imagem {
-    padding: 0px;
-}
-
-
 .txtflu {
     margin: 0px;
-    padding: 1rem 1rem; 
+    padding: 15px 15px; 
     text-align: left;
     background: yellow;
     border-bottom: 4px solid black;
     font-size: 1rem;
     text-align: center;
     position: relative;
-    top:0px;
+    top:200px;
+    height: 85px;
 }
 
 .contato-conteiner {
