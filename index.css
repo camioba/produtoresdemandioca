@@ -22,7 +22,7 @@ html {
     font-size: 1rem;
     text-transform: uppercase;
     list-style: none;
-    background: rgb(200, 200, 200, 0.5);   
+    background: rgba(190, 183, 183, 0.8);   
     z-index: 1;
 }
 
@@ -30,6 +30,8 @@ html {
     padding-left: 0px;
     position: fixed;
     width: 100vw;
+    
+   
 }
 
 .menu li {
@@ -42,9 +44,10 @@ html {
 
 .menu a {
     text-decoration: none;
-    display: block;
+    display: inline-block;
     padding: 1.2em;
     color: white;
+    
 
 }
 .submenu {
@@ -78,6 +81,17 @@ html {
     overflow: hidden;
 }
 
+
+header .fas {
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 0; height: 0; border: 0;
+    
+}
+
 .triangle-demo {
     border-top: 0 solid white;
     border-left: 0 solid black; 
@@ -91,8 +105,22 @@ html {
     border-bottom-color: transparent; 
     border-left-color: transparent; 
     border-right-color: transparent;
-    margin: -13px 0px 0px 130px;
+    
 }  
+
+.tr1 {
+    display: inline-block;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.tr2 {
+    display: inline-block;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
 
 
 footer {
@@ -202,7 +230,7 @@ footer {
 .txt-container {
     background-color: none;
     height: 100%;
-    padding: 60px 0px;
+    padding: 80px 0px 30px 0px;
     margin: 0px;
 }
 
@@ -230,6 +258,15 @@ hr {
     
 }
 
+.margin-dir {
+    margin-right: 50px;
+}
+
+.margin-esq {
+    margin-left: 50px;
+}
+
+
 h1 {
     font-family: 'Scada', sans-serif;
     font-size: 3em;
@@ -240,7 +277,6 @@ h1 {
 }
 
 h2 {
-
     font-family: 'Mukta', sans-serif;
     font-size: 1.3em;
     font-weight: normal;
@@ -256,117 +292,156 @@ h3 {
     letter-spacing: normal;
     line-height: 30px;
     color: none;
-    padding: 10px 10px;
-
-}
-
-h4 {
-    font-family: 'Mukta', sans-serif;
-    font-size: 1.3em;
-    font-weight: normal;
-    letter-spacing: normal;
-    line-height: 30px;
-    margin-left: 200px;
-    margin-bottom: 50px;
-    text-align: left;
-    position: absolute;
-    display: block;
+    background-color: rgba(231, 219, 219);
+    padding: 10px 10px;  
+    display: inline-block;
     
 }
 
-.margin-dir {
-    margin-right: 50px;
-}
+h4 {
+    font-family: 'Scada', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: none;
+    padding: 10px 10px;
+    color: black;
 
-.margin-esq {
-    margin-left: 50px;
 }
-
 
 .container-col100 {    
-    padding: 0px 50px;
-    height: 70%;
+    padding: 0px 40px;
   
 }
 
 .container-col50 {    
     padding: 0px 30px;
-    
-   
-}
-.container-col25 {    
-    padding: 0px 30px;
-    height: 70%;
-   
-    
- 
+  
 }
 
+.container-col25 {    
+    padding: 0px 30px;
+        
+}
 
 .img {
     float: left;
     display: block;
-  
-    height: 100%;
+    margin: 10px 0px;
+    height: 50%;
     background-image: url("produtores.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: yellow; 
+    background-color: none; 
+}
+
+.img-benef {
+    float: left;
+    display: block;
+    margin: 10px 0px;
+    height: 50%;
+    background-image: url("img-benef.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    background-color: none; 
 }
 
 .txt {
-    
     padding: 1rem 1rem; 
     text-align: left;
     background:white;
     border-bottom: 4px solid black;
-  
     min-width: 15rem;
     font-size: 1rem;
     text-align: center;
     position: relative;
     left: 5%;
-    top: 50%;
-}
-
-
-.txt > h1, .txtflu > h1 {
-    font-size: 2em;
-    
+    top: 30%;
 }
 
 .esq {
-    float: left;
+    float: left; 
+    padding-bottom: 100px;
+    padding-top: 10px;
+    background-color: none;
+    
     
 }
 
-.imgesq {
-    margin: 10px 20px;
+.img-prod {
+    margin: 10px 10px;
     padding: 0px 0px;
-    height: 315px;
-    background-image: url("produtores.jpg");
+    background-image: none;
     background-repeat: no-repeat;
     background-size: auto 500px;
-    background-position: center;
-    
-    
-    display: block;
-    
-    
+    background-position: center; 
+    height: 88px; /*chutei o valor para ficar altura do txtflu*/
+    padding-bottom: 50px;
+    background-color: none;
 }
 
 .txtflu {
     margin: 0px;
     padding: 15px 15px; 
-    text-align: left;
-    background: yellow;
+    background:rgba(107, 41, 41);
     border-bottom: 4px solid black;
     font-size: 1rem;
     text-align: center;
     position: relative;
-    top:200px;
-    height: 85px;
+     
+}
+
+.top {
+    top: 170px; /*chutei o valor do top pro elemento alinhar por baixo*/  
+}
+
+.imgesq-benef1 {
+    margin: 10px 10px;
+    padding: 0px 0px;
+    background-image: url("benef1.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: center bottom; 
+    height: 300px;
+}
+
+.imgesq-benef2 {
+    margin: 10px 10px;
+    padding: 0px 0px;
+    background-image: url("benef2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: center bottom; 
+    height: 300px;
+}
+
+.imgesq-benef3 {
+    margin: 10px 10px;
+    padding: 0px 0px;
+    background-image: url("benef3.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: center bottom; 
+    height: 300px;
+}
+
+.imgesq-benef4 {
+    margin: 10px 10px;
+    padding: 0px 0px;
+    background-image: url("benef4.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+    background-position: center bottom; 
+    height: 300px;
+}
+
+
+
+.imgesq > .txtflu {
+    vertical-align: bottom;
+
 }
 
 .contato-conteiner {
