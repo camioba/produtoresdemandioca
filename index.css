@@ -296,6 +296,26 @@ h3 {
     padding: 10px 10px;  
     display: inline-block;
     
+    
+}
+
+.txtflu:hover > h3 {
+    background: linear-gradient black;
+    transition: all .5s ease;
+    background-color: red;
+    color: white;
+}
+
+.txtflu:hover > h4 {
+    background: linear-gradient black;
+    color: white;
+    transition: all .5s ease;
+}
+
+
+.txtflu:hover {
+    background-color: red;
+    color: white;
 }
 
 h4 {
@@ -306,7 +326,13 @@ h4 {
     background-color: none;
     padding: 10px 10px;
     color: black;
+    text-decoration: none;
+    
+}
 
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .container-col100 {    
@@ -390,8 +416,11 @@ h4 {
     font-size: 1rem;
     text-align: center;
     position: relative;
+    transition: all .5s ease;
      
 }
+
+
 
 .top {
     top: 170px; /*chutei o valor do top pro elemento alinhar por baixo*/  
