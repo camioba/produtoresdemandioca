@@ -1,3 +1,5 @@
+@media only screen and (min-width: 701px) {
+
 html {
     font-size: 16px;
     box-sizing: border-box;
@@ -30,8 +32,6 @@ html {
     padding-left: 0px;
     position: fixed;
     width: 100vw;
-    
-   
 }
 
 .menu li {
@@ -47,15 +47,12 @@ html {
     display: inline-block;
     padding: 1.2em;
     color: white;
-    
-
 }
 .submenu {
     display: none;
     position: absolute;
     min-width: 11.4em;
-    color: black;
-    
+    color: black; 
 }
 
 .menu > li:hover {
@@ -81,7 +78,6 @@ html {
     overflow: hidden;
 }
 
-
 header .fas {
     font-size: 1.2em;
     color: white;
@@ -89,7 +85,6 @@ header .fas {
     left: 5px;
     top: 5px;
     width: 0; height: 0; border: 0;
-    
 }
 
 .triangle-demo {
@@ -105,7 +100,6 @@ header .fas {
     border-bottom-color: transparent; 
     border-left-color: transparent; 
     border-right-color: transparent;
-    
 }  
 
 .tr1 {
@@ -122,7 +116,6 @@ header .fas {
     top: 5px;
 }
 
-
 footer {
     display: block;
     position: relative;
@@ -130,10 +123,7 @@ footer {
     margin: 0px auto;
     background-color: none;
     font-size: 1rem;
-    
-
 }
-
 
 .menu-footer { 
     font-family: 'Mukta', sans-serif;
@@ -145,9 +135,7 @@ footer {
     height: 50%;
     margin: 0px auto;
     float: left;
-   
-    background: red;  
-    
+    background: rgba(190, 183, 183);  
     
 }
 
@@ -160,9 +148,12 @@ footer {
     display: block;
     text-decoration: none;
     padding: .3em;
-    color: black;
+    color: #2f3132;
 }
 
+.menu-footer ul a:hover {
+    color: black;
+}
 
 .submenu-footer li {
     margin-left: 30px;
@@ -176,10 +167,8 @@ footer {
     text-decoration: none;
     height: 50%;
     float: left;
-    background-color: red;
-    padding: 20px 0px;
-    
-    
+    background-color: rgba(190, 183, 183);
+    padding: 20px 0px;    
 }
 
 .col-footer p {
@@ -189,18 +178,14 @@ footer {
     width: 50%;
     float:right;
     padding: 10px 70px;
+    color: #2f3132;
     
 }
 
-
-
-
 .fas, .fab {
     font-size: 1.4em;
-    color: black;
+    color: #2f3132;
     position: relative;
-   
-   
 }
 
 .fa-facebook {
@@ -226,7 +211,6 @@ footer {
     background-position: right center;
 }
 
-
 .txt-container {
     background-color: none;
     height: 100%;
@@ -239,7 +223,6 @@ footer {
     padding: 15px 0px; ;
     background-color: none;
     font-size: 1rem;
-    
 }
 
 .txtesq {
@@ -254,8 +237,6 @@ hr {
     height: 4px;
     background-color: black;
     border: black;
-    
-    
 }
 
 .margin-dir {
@@ -265,7 +246,6 @@ hr {
 .margin-esq {
     margin-left: 50px;
 }
-
 
 h1 {
     font-family: 'Scada', sans-serif;
@@ -294,28 +274,8 @@ h3 {
     color: none;
     background-color: rgba(231, 219, 219);
     padding: 10px 10px;  
-    display: inline-block;
-    
-    
-}
-
-.txtflu:hover > h3 {
-    background: linear-gradient black;
+    display: inline-block;  
     transition: all .5s ease;
-    background-color: red;
-    color: white;
-}
-
-.txtflu:hover > h4 {
-    background: linear-gradient black;
-    color: white;
-    transition: all .5s ease;
-}
-
-
-.txtflu:hover {
-    background-color: red;
-    color: white;
 }
 
 h4 {
@@ -327,6 +287,7 @@ h4 {
     padding: 10px 10px;
     color: black;
     text-decoration: none;
+    transition: all .5s ease;
     
 }
 
@@ -350,41 +311,54 @@ a {
         
 }
 
-.img {
+.banner-prod, .banner-benef {
     float: left;
     display: block;
     margin: 10px 0px;
     height: 50%;
-    background-image: url("produtores.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     background-color: none; 
 }
 
-.img-benef {
-    float: left;
-    display: block;
-    margin: 10px 0px;
-    height: 50%;
+.banner-prod {
+    background-image: url("produtores.jpg");
+    background-position: center;
+}
+
+.banner-benef {
     background-image: url("img-benef.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: left center;
-    background-color: none; 
 }
 
 .txt {
     padding: 1rem 1rem; 
     text-align: left;
     background:white;
-    border-bottom: 4px solid black;
+    border-bottom: 0px solid black;
     min-width: 15rem;
     font-size: 1rem;
     text-align: center;
     position: relative;
     left: 5%;
     top: 30%;
+    transition: all .5s ease;
+}
+
+.banner-prod:hover >.txt, .banner-benef:hover >.txt {
+    animation: move1 .5s ease;
+    border-bottom: 4px solid black;
+    top: 25%; left: 7%;
+}
+
+@keyframes move1 {
+    0% {
+        top: 30%; left: 5%;
+    }
+    100% {
+        top: 25%; left: 7%;
+    }
+
 }
 
 .esq {
@@ -392,8 +366,7 @@ a {
     padding-bottom: 100px;
     padding-top: 10px;
     background-color: none;
-    
-    
+
 }
 
 .img-prod {
@@ -408,66 +381,88 @@ a {
     background-color: none;
 }
 
+.img-prod:hover {
+    background-size: auto 700px;
+}
+
 .txtflu {
     margin: 0px;
     padding: 15px 15px; 
-    background:rgba(107, 41, 41);
+    background:rgb(141, 40, 40);
     border-bottom: 4px solid black;
     font-size: 1rem;
     text-align: center;
     position: relative;
     transition: all .5s ease;
-     
+}
+.txtflu:hover {
+    background-color: #2f3132;
+    transition: all .5s ease;
 }
 
+.txtflu:hover > h3 {
+    background: linear-gradient black;
+    background-color: #2f3132;
+    color: rgba(231, 219, 219);
+}
 
+.txtflu:hover > h4 {
+    background: linear-gradient #2f3132;
+    color: rgba(231, 219, 219);
+}
 
 .top {
     top: 170px; /*chutei o valor do top pro elemento alinhar por baixo*/  
 }
 
-.imgesq-benef1 {
+.imgesq-benef1, .imgesq-benef2, .imgesq-benef3, .imgesq-benef4 {
     margin: 10px 10px;
     padding: 0px 0px;
-    background-image: url("benef1.jpg");
     background-repeat: no-repeat;
     background-size: auto 300px;
     background-position: center bottom; 
     height: 300px;
+    transition: all .5s ease;
+}
+
+.imgesq-benef1 {
+    background-image: url("benef1.jpg");
 }
 
 .imgesq-benef2 {
-    margin: 10px 10px;
-    padding: 0px 0px;
     background-image: url("benef2.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 300px;
-    background-position: center bottom; 
-    height: 300px;
 }
-
+ 
 .imgesq-benef3 {
-    margin: 10px 10px;
-    padding: 0px 0px;
     background-image: url("benef3.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 300px;
-    background-position: center bottom; 
-    height: 300px;
 }
 
 .imgesq-benef4 {
-    margin: 10px 10px;
-    padding: 0px 0px;
     background-image: url("benef4.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 300px;
-    background-position: center bottom; 
-    height: 300px;
 }
 
+.imgesq-benef1:hover, .imgesq-benef2:hover, .imgesq-benef3:hover, .imgesq-benef4:hover {
+    background-size: auto 350px;
+}
 
+.imgesq-benef1:hover > .txtflu, .imgesq-benef2:hover > .txtflu, .imgesq-benef3:hover > .txtflu, .imgesq-benef4:hover > .txtflu {
+    background-color: #2f3132;
+    color: white;
+}
 
+.imgesq-benef1:hover > .txtflu > h3, .imgesq-benef2:hover > .txtflu > h3, .imgesq-benef3:hover > .txtflu > h3, .imgesq-benef4:hover > .txtflu > h3 {
+    background: linear-gradient black;
+    transition: all .5s ease;
+    background-color: #2f3132;
+    color: rgba(231, 219, 219);
+}
+
+.imgesq-benef1:hover > .txtflu > h4, .imgesq-benef2:hover > .txtflu > h4, .imgesq-benef3:hover > .txtflu > h4, .imgesq-benef4:hover > .txtflu > h4 {
+    background: linear-gradient black;
+    color: rgba(231, 219, 219);
+    transition: all .5s ease;
+}
+    
 .imgesq > .txtflu {
     vertical-align: bottom;
 
@@ -530,22 +525,29 @@ form textarea {
 } 
 
 input[type=submit] {
-    
     font-family: 'Mukta', sans-serif;
     font-size: 1em;
     padding: 10px 10px;
     margin: 0px auto;
     width: 100%;
-  
     border: none;
     border-bottom: none;
-    background-color: black;
     box-sizing: inherit;
     color: white;
-    
-  
+    transition: all .2s ease;
+    background-color: black;   
+ 
 }
 
+input[type=submit]:hover {
+    background-color: #2f3132;
+   
+}
+
+}
+
+@media only screen and (max-width: 700px) {
 
 
 
+}
