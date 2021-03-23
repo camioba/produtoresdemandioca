@@ -1,4 +1,4 @@
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 901px) {
 
 html {
     font-size: 16px;
@@ -51,12 +51,11 @@ html {
 .submenu {
     display: none;
     position: absolute;
-    min-width: 11.4em;
-    color: black; 
+    min-width: 11em;
 }
 
 .menu > li:hover {
-    background: rgba(184, 27, 22, 0.6);
+    background: rgb(172, 81, 20);
 }
 
 .menu li:hover > .submenu {
@@ -64,7 +63,7 @@ html {
 }
 
 .submenu li:hover {
-    background:rgba(184, 27, 22, 0.6);
+    background:rgb(172, 81, 20);
 }
 
 .clearfix:after{
@@ -92,10 +91,10 @@ header .fas {
     border-left: 0 solid black; 
     border-bottom: 0 solid black;
     border-right: 0 solid black;
-    border-top-width: 7px;
-    border-left-width: 7px;
-    border-right-width: 7px;
-    border-bottom-width: 7px;
+    border-top-width: 6px;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    border-bottom-width: 6x;
     width: 0; height: 0;
     border-bottom-color: transparent; 
     border-left-color: transparent; 
@@ -105,15 +104,15 @@ header .fas {
 .tr1 {
     display: inline-block;
     position: relative;
-    left: 5px;
-    top: 5px;
+    left: 6px;
+    bottom: 2px;
 }
 
 .tr2 {
     display: inline-block;
     position: relative;
-    left: 5px;
-    top: 5px;
+    left: 6px;
+    bottom: 2px;
 }
 
 footer {
@@ -152,7 +151,7 @@ footer {
 }
 
 .menu-footer ul a:hover {
-    color: black;
+    color: rgb(172, 81, 20);
 }
 
 .submenu-footer li {
@@ -188,9 +187,12 @@ footer {
     position: relative;
 }
 
+.fas:hover, .fab:hover {
+    color: rgb(172, 81, 20);
+}
+
 .fa-facebook {
     left: 0px;
-   
 }
 
 .fa-instagram {
@@ -546,8 +548,645 @@ input[type=submit]:hover {
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
+
+    html {
+        font-size: 12px;
+        box-sizing: border-box;
+    }    
+
+    .hamburger {
+        height: 9%;
+        width: 100%;
+        padding: 0px;
+        background-color: red;
+        position: fixed;
+        z-index: 1;
+       
+    }
 
 
+    #checkbox-menu{
+        position: absolute;
+        opacity: 0;
+       
+    }
+      
+    .hamburger label{
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        height: 22px;
+        width: 30px;
+        margin: 0px;
+        z-index: 1;
 
+        
+    }
+      
+    .hamburger label span{
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-radius: 30px;
+        background:black;
+        transition: 0.25s ease-in-out;
+        margin: 20px;
+        
+    }
+      
+    .hamburger label span:nth-child(1) {
+        top: 0;
+    }
+      
+    .hamburger label span:nth-child(2) {
+        top: 8px;
+    }
+      
+    .hamburger label span:nth-child(3) {
+        top: 16px;
+    }
+      
+    #checkbox-menu:checked + label span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+      
+    #checkbox-menu:checked + label span:nth-child(2){
+        opacity: 0;
+    }
+      
+    #checkbox-menu:checked + label span:nth-child(3){
+        transform: rotate(45deg);
+        top:8px;
+    }
+    
+    nav {
+        background-color: rgba(190, 183, 183, .95);
+        width: 100%;
+        height: 500%;
+        padding: 20px;
+        transition: all .4s ease-in-out;
+        transform: translateX(100px);
+        display: none;
+        z-index: 1;
+    }
+
+    input[type="checkbox"]:checked ~ nav{
+        transform: translateX(0px);
+        display: block;
+    }   
+
+    .menu, .submenu {
+        font-family: 'Mukta', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+        list-style: none;
+        background: none;   
+        z-index: 1;
+    }
+    
+    .menu {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50px;
+    }
+
+    .menu > li > a {
+        text-decoration: none;
+        display: block;
+        padding: 1.2em;
+        color: white;   
+        width: 50%;
+        background-color: none;     
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        left: 170px;
+        bottom: 62px;
+    }
+   
+
+    .submenu a {
+        text-decoration: none;
+        display: block;
+        padding: 1.2em 2.5em;
+        color: white;   
+        width: 100%;
+        background-color: none; 
+    }
+    
+    .menu li:hover, .menu li a:hover, .menu > li a:hover {
+        color: rgb(172, 81, 20);
+        text-decoration: underline;
+    }   
+    
+    .menu li:hover > .submenu {
+        display: block;
+    }
+    
+    .submenu li:hover {
+        color: rgb(172, 81, 20);
+    }
+    
+    .clearfix:after{
+        content: '.';
+        display: block;
+        clear: both;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    
+    header .fas {
+        font-size: 1.2em;
+        color: white;
+        position: relative;
+        left: 5px;
+        top: 5px;
+        width: 0; height: 0; border: 0;
+    }
+    
+    .triangle-demo {
+        border-top: 0 solid white;
+        border-left: 0 solid white; 
+        border-bottom: 0 solid black;
+        border-right: 0 solid black;
+        border-top-width: 6px;
+        border-left-width: 6px;
+        border-right-width: 6px;
+        border-bottom-width: 6px;
+        width: 0; height: 0;
+        border-bottom-color: transparent; 
+        border-left-color: none; 
+        border-right-color: transparent;
+        border-top-color: transparent;
+    }  
+    
+    .tr1 {
+        display: inline-block;
+        position: relative;
+        left: 8px;
+        top: 1px;
+    }
+    
+    .tr2 {
+        display: inline-block;
+        position: relative;
+        left: 8px;
+        top: 1px;
+    }
+    
+    footer {
+        display: block;
+        position: relative;
+        padding: 0px;
+        margin: 0px auto;
+        background-color: none;
+        font-size: 1rem;
+    }
+    
+    .menu-footer { 
+        font-family: 'Mukta', sans-serif;
+        font-weight: bold;
+        font-size: .9em;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 20px 0px;
+        height: 50%;
+        margin: 0px auto;
+        float: left;
+        background: rgba(190, 183, 183);  
+        
+    }
+    
+    .menu-footer > ul {
+        padding: 10px 70px;
+    
+    }
+    
+    .menu-footer ul a {
+        display: block;
+        text-decoration: none;
+        padding: .3em;
+        color: #2f3132;
+    }
+    
+    .menu-footer ul a:hover {
+        color: rgb(172, 81, 20);
+    }
+    
+    .submenu-footer li {
+        margin-left: 30px;
+        font-weight: bold;
+    }
+    
+    .col-footer {
+        font-family: 'Scada', sans-serif;
+        font-weight: normal;
+        text-transform: normal;
+        text-decoration: none;
+        height: 50%;
+        float: left;
+        background-color: rgba(190, 183, 183);
+        padding: 20px 0px;    
+    }
+    
+    .col-footer p {
+        font-size: .9em;
+        line-height: 1.5em;
+        letter-spacing: .03em;
+        width: 50%;
+        float:right;
+        padding: 10px 70px;
+        color: #2f3132;
+        
+    }
+    
+    .fas, .fab {
+        font-size: 1.4em;
+        color: #2f3132;
+        position: relative;
+    }
+    
+    .fas:hover, .fab:hover {
+        color: rgb(172, 81, 20);
+    }
+    
+    .fa-facebook {
+        left: 0px;
+    }
+    
+    .fa-instagram {
+        left:40px;
+    }
+    
+    .fa-twitter {
+        left:80px;
+       
+    }
+    
+    .banner {
+        z-index: 0;
+        height: 100%;
+        background-image: url("banner.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: right center;
+       
+    }
+    
+    .txt-container {
+        background-color: none;
+        height: 100%;
+        padding: 80px 0px 30px 0px;
+        margin: 0px;
+    }
+    
+    .txtdir {
+        float: right;
+        padding: 15px 0px; ;
+        background-color: none;
+        font-size: 1rem;
+    }
+    
+    .txtesq {
+        float: left;
+        padding: 15px 0px;   
+        text-align: right;
+        background: none;
+        font-size: 1rem;
+    }
+    
+    hr {
+        height: 4px;
+        background-color: black;
+        border: black;
+    }
+    
+    .margin-dir {
+        margin-right: 50px;
+    }
+    
+    .margin-esq {
+        margin-left: 50px;
+    }
+    
+    h1 {
+        font-family: 'Scada', sans-serif;
+        font-size: 3em;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        background-color: none;
+        padding: 5px 15px;  
+        width: 80%;
+        
+       
+    }
+    
+    h2 {
+        font-family: 'Mukta', sans-serif;
+        font-size: 1.3em;
+        font-weight: normal;
+        letter-spacing: .01em;
+        line-height: 1.3em;
+        margin: 0.2em 0px;
+    }
+    
+    h3 {
+        font-family: 'Mukta', sans-serif;
+        font-size: 1.3em;
+        font-weight: bold;
+        letter-spacing: normal;
+        line-height: 30px;
+        color: none;
+        background-color: rgba(231, 219, 219);
+        padding: 10px 10px;  
+        display: inline-block;  
+        transition: all .5s ease;
+    }
+    
+    h4 {
+        font-family: 'Scada', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: none;
+        padding: 10px 10px;
+        color: black;
+        text-decoration: none;
+        transition: all .5s ease;
+        
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .container-col100 {    
+        padding: 0px 40px;
+      
+    }
+    
+    .container-col50 {    
+        padding: 0px 30px;
+      
+    }
+    
+    .container-col25 {    
+        padding: 0px 30px;
+            
+    }
+    
+    .banner-prod, .banner-benef {
+        float: left;
+        display: block;
+        margin: 10px 0px;
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: none; 
+    }
+    
+    .banner-prod {
+        background-image: url("produtores.jpg");
+        background-position: center;
+    }
+    
+    .banner-benef {
+        background-image: url("img-benef.jpg");
+        background-position: left center;
+    }
+    
+    .txt {
+        padding: 1rem 1rem; 
+        text-align: left;
+        background:white;
+        border-bottom: 0px solid black;
+        min-width: 15rem;
+        font-size: 1rem;
+        text-align: center;
+        position: relative;
+        left: 5%;
+        top: 30%;
+        transition: all .5s ease;
+    }
+    
+    .banner-prod:hover >.txt, .banner-benef:hover >.txt {
+        animation: move1 .5s ease;
+        border-bottom: 4px solid black;
+        top: 25%; left: 7%;
+    }
+    
+    @keyframes move1 {
+        0% {
+            top: 30%; left: 5%;
+        }
+        100% {
+            top: 25%; left: 7%;
+        }
+    
+    }
+    
+    .esq {
+        float: left; 
+        padding-bottom: 100px;
+        padding-top: 10px;
+        background-color: none;
+    
+    }
+    
+    .img-prod {
+        margin: 10px 10px;
+        padding: 0px 0px;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: auto 500px;
+        background-position: center; 
+        height: 88px; /*chutei o valor para ficar altura do txtflu*/
+        padding-bottom: 50px;
+        background-color: none;
+    }
+    
+    .img-prod:hover {
+        background-size: auto 700px;
+    }
+    
+    .txtflu {
+        margin: 0px;
+        padding: 15px 15px; 
+        background:rgb(141, 40, 40);
+        border-bottom: 4px solid black;
+        font-size: 1rem;
+        text-align: center;
+        position: relative;
+        transition: all .5s ease;
+    }
+    .txtflu:hover {
+        background-color: #2f3132;
+        transition: all .5s ease;
+    }
+    
+    .txtflu:hover > h3 {
+        background: linear-gradient black;
+        background-color: #2f3132;
+        color: rgba(231, 219, 219);
+    }
+    
+    .txtflu:hover > h4 {
+        background: linear-gradient #2f3132;
+        color: rgba(231, 219, 219);
+    }
+    
+    .top {
+        top: 170px; /*chutei o valor do top pro elemento alinhar por baixo*/  
+    }
+    
+    .imgesq-benef1, .imgesq-benef2, .imgesq-benef3, .imgesq-benef4 {
+        margin: 10px 10px;
+        padding: 0px 0px;
+        background-repeat: no-repeat;
+        background-size: auto 300px;
+        background-position: center bottom; 
+        height: 300px;
+        transition: all .5s ease;
+    }
+    
+    .imgesq-benef1 {
+        background-image: url("benef1.jpg");
+    }
+    
+    .imgesq-benef2 {
+        background-image: url("benef2.jpg");
+    }
+     
+    .imgesq-benef3 {
+        background-image: url("benef3.jpg");
+    }
+    
+    .imgesq-benef4 {
+        background-image: url("benef4.jpg");
+    }
+    
+    .imgesq-benef1:hover, .imgesq-benef2:hover, .imgesq-benef3:hover, .imgesq-benef4:hover {
+        background-size: auto 350px;
+    }
+    
+    .imgesq-benef1:hover > .txtflu, .imgesq-benef2:hover > .txtflu, .imgesq-benef3:hover > .txtflu, .imgesq-benef4:hover > .txtflu {
+        background-color: #2f3132;
+        color: white;
+    }
+    
+    .imgesq-benef1:hover > .txtflu > h3, .imgesq-benef2:hover > .txtflu > h3, .imgesq-benef3:hover > .txtflu > h3, .imgesq-benef4:hover > .txtflu > h3 {
+        background: linear-gradient black;
+        transition: all .5s ease;
+        background-color: #2f3132;
+        color: rgba(231, 219, 219);
+    }
+    
+    .imgesq-benef1:hover > .txtflu > h4, .imgesq-benef2:hover > .txtflu > h4, .imgesq-benef3:hover > .txtflu > h4, .imgesq-benef4:hover > .txtflu > h4 {
+        background: linear-gradient black;
+        color: rgba(231, 219, 219);
+        transition: all .5s ease;
+    }
+        
+    .imgesq > .txtflu {
+        vertical-align: bottom;
+    
+    }
+    
+    .contato-conteiner {
+        position: relative;
+        display: block;
+        background-color: red;
+        height: 70%;
+        width: 100%;
+        padding: 50px 100px;
+
+    }
+    
+    form {
+        font-family: 'Mukta', sans-serif;
+        font-size: 1rem;
+        background-color: rgba(231, 219, 219, 0.411);
+        color: black;
+        padding: 10px;
+       
+      
+        text-align: left;
+        position: relative;
+        
+    }
+    
+    .class-input, .class-textarea {
+        display: block;
+        float: left;
+        padding: 10px 20px;
+    }
+
+    .class-input label {
+        display: block;
+        padding: 0px;
+    }
+
+    .class-submit {
+        display: block;
+        
+        padding: 10px 20px;
+    }
+    
+    input[type=text] {
+        font-family: 'Mukta', sans-serif;
+        font-size: 1em;
+        padding: 5px 10px;
+        margin: 0px auto;
+        width: 100%;
+        border: none;
+        border-bottom: 4px solid black;
+        background-color: white;
+        box-sizing: inherit;
+    }
+    
+    form textarea {
+        font-family: 'Mukta', sans-serif;
+        font-size: 1em;
+        width: 100%;
+        height: 30%;
+        padding: 5px 10px;
+        
+        border: none;
+        border-bottom: 4px solid black;
+        resize: none;
+        box-sizing: inherit;
+    
+    } 
+    
+    input[type=submit] {
+        font-family: 'Mukta', sans-serif;
+        font-size: 1em;
+        padding: 10px 10px;
+        margin: 0px auto;
+        width: 100%;
+        border: none;
+        border-bottom: none;
+        box-sizing: inherit;
+        color: white;
+        transition: all .2s ease;
+        background-color: black;   
+     
+    }
+    
+    input[type=submit]:hover {
+        background-color: #2f3132;
+       
+    }
 }
