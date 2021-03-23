@@ -583,9 +583,9 @@ input[type=submit]:hover {
     .hamburger label span{
         position: absolute;
         display: block;
-        height: 5px;
+        height: 4px;
         width: 100%;
-        border-radius: 30px;
+        border-radius: 0px;
         background:black;
         transition: 0.25s ease-in-out;
         margin: 20px;
@@ -607,6 +607,7 @@ input[type=submit]:hover {
     #checkbox-menu:checked + label span:nth-child(1){
         transform: rotate(-45deg);
         top: 8px;
+        background: black;
     }
       
     #checkbox-menu:checked + label span:nth-child(2){
@@ -616,6 +617,7 @@ input[type=submit]:hover {
     #checkbox-menu:checked + label span:nth-child(3){
         transform: rotate(45deg);
         top:8px;
+        background: black;
     }
     
     nav {
@@ -648,7 +650,7 @@ input[type=submit]:hover {
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 50px;
+        top: 70px;
     }
 
     .menu > li > a {
@@ -663,8 +665,8 @@ input[type=submit]:hover {
     .submenu {
         display: none;
         position: absolute;
-        left: 170px;
-        bottom: 62px;
+        left: 120px;
+        bottom: 132px;
     }
    
 
@@ -756,7 +758,7 @@ input[type=submit]:hover {
         text-transform: uppercase;
         text-decoration: none;
         padding: 20px 0px;
-        height: 30%;
+        height: 40%;
         margin: 0px auto;
         float: left;
         background: rgba(190, 183, 183);  
@@ -771,7 +773,7 @@ input[type=submit]:hover {
     .menu-footer ul a {
         display: block;
         text-decoration: none;
-        padding: .3em;
+        padding: .3em 0px;
         color: #2f3132;
     }
     
@@ -789,7 +791,7 @@ input[type=submit]:hover {
         font-weight: normal;
         text-transform: normal;
         text-decoration: none;
-        height: 30%;
+        height: 40%;
         float: left;
         background-color: rgba(190, 183, 183);
         padding: 20px 0px;    
@@ -836,7 +838,7 @@ input[type=submit]:hover {
         
         background-image: url("banner.jpg");
         background-repeat: no-repeat;
-        background-size: 300% auto;
+        background-size: 250% auto;
         background-position: 40% 0;
         
        
@@ -999,7 +1001,7 @@ input[type=submit]:hover {
     
     .esq {
         float: left; 
-        padding: 20px 0px;
+        padding:0px;
         background-color: none;
     
     }
@@ -1011,8 +1013,8 @@ input[type=submit]:hover {
         width: 35%;
     }
     .img-prod {
-        margin: 0px 10px;
-        padding: 0px 0px;
+        margin: 10px 10px;
+        padding: 10px 0px;
         background-image: none;
         background-repeat: no-repeat;
         background-size: auto 500px;
@@ -1139,6 +1141,13 @@ input[type=submit]:hover {
         float: left;
         padding: 10px 30px;
         width: 200px;
+    }
+
+    .class-submit {
+        display: block; 
+        float: left;
+        padding: 10px 30px;
+        width: 50px;
     }
     
     input[type=text] {
