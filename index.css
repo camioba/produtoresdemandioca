@@ -756,7 +756,7 @@ input[type=submit]:hover {
         text-transform: uppercase;
         text-decoration: none;
         padding: 20px 0px;
-        height: 50%;
+        height: 30%;
         margin: 0px auto;
         float: left;
         background: rgba(190, 183, 183);  
@@ -764,7 +764,7 @@ input[type=submit]:hover {
     }
     
     .menu-footer > ul {
-        padding: 10px 70px;
+        padding: 10px 40px;
     
     }
     
@@ -789,7 +789,7 @@ input[type=submit]:hover {
         font-weight: normal;
         text-transform: normal;
         text-decoration: none;
-        height: 50%;
+        height: 30%;
         float: left;
         background-color: rgba(190, 183, 183);
         padding: 20px 0px;    
@@ -799,9 +799,9 @@ input[type=submit]:hover {
         font-size: .9em;
         line-height: 1.5em;
         letter-spacing: .03em;
-        width: 50%;
+        width: 60%;
         float:right;
-        padding: 10px 70px;
+        padding: 10px 40px ;
         color: #2f3132;
         
     }
@@ -821,11 +821,11 @@ input[type=submit]:hover {
     }
     
     .fa-instagram {
-        left:40px;
+        left:20px;
     }
     
     .fa-twitter {
-        left:80px;
+        left:40px;
        
     }
     
@@ -948,7 +948,7 @@ input[type=submit]:hover {
     .banner-prod, .banner-benef {
         float: left;
         display: block;
-        margin: 10px 0px;
+        padding: 10px 0px;
         height: 30%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -975,30 +975,29 @@ input[type=submit]:hover {
         text-align: center;
         position: relative;
         left: 5%;
-        top: 40%;
+        top: 30%;
         transition: all .5s ease;
     }
     
     .banner-prod:hover >.txt, .banner-benef:hover >.txt {
         animation: move1 .5s ease;
         border-bottom: 4px solid black;
-        top: 35%; left: 7%;
+        top: 25%; left: 7%;
     }
     
     @keyframes move1 {
         0% {
-            top: 40%; left: 5%;
+            top: 30%; left: 5%;
         }
         100% {
-            top: 35%; left: 7%;
+            top: 25%; left: 7%;
         }
     
     }
     
     .esq {
         float: left; 
-        padding-bottom: 0px;
-        padding-top: 10px;
+        padding: 20px 0px;
         background-color: none;
     
     }
@@ -1112,11 +1111,8 @@ input[type=submit]:hover {
         position: relative;
         display: block;
         background-color: rgba(231, 219, 219, 0.411);
-        
-        
         padding: 50px 20px;
         margin-top: 30px;
-
     }
     
     form {
@@ -1125,21 +1121,22 @@ input[type=submit]:hover {
         background-color: none;
         color: black;
         padding: 10px 30px;
-    
         position: relative;
-        
     }
     
-    .class-input, .class-textarea {
+    .class-input {
         display: block;
         float: left;
         padding: 10px 30px;
+        width: 120px;
         
     }
 
-    .class-input label {
+    .class-textarea {
         display: block;
-        padding: 0px;
+        float: left;
+        padding: 10px 30px;
+        width: 200px;
     }
     
     input[type=text] {
