@@ -494,11 +494,7 @@ form {
     padding: 10px 20px;
 }
 
-.class-submit {
-    display: block;
-    
-    padding: 10px 20px;
-}
+
 
 input[type=text] {
     font-family: 'Mukta', sans-serif;
@@ -516,7 +512,7 @@ form textarea {
     font-family: 'Mukta', sans-serif;
     font-size: 1em;
     width: 100%;
-    height: 30%;
+    
     padding: 5px 10px;
     
     border: none;
@@ -559,7 +555,7 @@ input[type=submit]:hover {
         height: 9%;
         width: 100%;
         padding: 0px;
-        background-color: red;
+        background-color: none;
         position: fixed;
         z-index: 1;
        
@@ -836,18 +832,20 @@ input[type=submit]:hover {
     .banner {
         z-index: 0;
         height: 100%;
+        width: 100%;
         background-image: url("banner.jpg");
         background-repeat: no-repeat;
-        background-size: 100% auto;
-        background-position: right center;
+        background-size: 230% auto;
+        background-position: 35% center;
        
     }
     
     .txt-container {
         background-color: none;
-        height: 100%;
-        padding: 80px 0px 30px 0px;
+        padding: 30px 0px;
         margin: 0px;
+        height: 65%;
+        
     }
     
     .txtdir {
@@ -886,8 +884,8 @@ input[type=submit]:hover {
         text-transform: uppercase;
 
         background-color: none;
-        padding: 5px 15px;  
-        width: 80%;
+        padding: 5px;  
+       
         
        
     }
@@ -933,7 +931,7 @@ input[type=submit]:hover {
     }
     
     .container-col100 {    
-        padding: 0px 40px;
+        padding: 0px;
       
     }
     
@@ -951,7 +949,7 @@ input[type=submit]:hover {
         float: left;
         display: block;
         margin: 10px 0px;
-        height: 50%;
+        height: 30%;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: none; 
@@ -977,36 +975,42 @@ input[type=submit]:hover {
         text-align: center;
         position: relative;
         left: 5%;
-        top: 30%;
+        top: 40%;
         transition: all .5s ease;
     }
     
     .banner-prod:hover >.txt, .banner-benef:hover >.txt {
         animation: move1 .5s ease;
         border-bottom: 4px solid black;
-        top: 25%; left: 7%;
+        top: 35%; left: 7%;
     }
     
     @keyframes move1 {
         0% {
-            top: 30%; left: 5%;
+            top: 40%; left: 5%;
         }
         100% {
-            top: 25%; left: 7%;
+            top: 35%; left: 7%;
         }
     
     }
     
     .esq {
         float: left; 
-        padding-bottom: 100px;
+        padding-bottom: 0px;
         padding-top: 10px;
         background-color: none;
     
     }
-    
+
+    .col33, .col25 {
+        width: 50%;
+    }
+    .col20 {
+        width: 35%;
+    }
     .img-prod {
-        margin: 10px 10px;
+        margin: 0px 10px;
         padding: 0px 0px;
         background-image: none;
         background-repeat: no-repeat;
@@ -1048,7 +1052,7 @@ input[type=submit]:hover {
     }
     
     .top {
-        top: 170px; /*chutei o valor do top pro elemento alinhar por baixo*/  
+        top: 175px; /*chutei o valor do top pro elemento alinhar por baixo*/  
     }
     
     .imgesq-benef1, .imgesq-benef2, .imgesq-benef3, .imgesq-benef4 {
@@ -1107,22 +1111,21 @@ input[type=submit]:hover {
     .contato-conteiner {
         position: relative;
         display: block;
-        background-color: red;
-        height: 70%;
-        width: 100%;
-        padding: 50px 100px;
+        background-color: rgba(231, 219, 219, 0.411);
+        
+        
+        padding: 50px 20px;
+        margin-top: 30px;
 
     }
     
     form {
         font-family: 'Mukta', sans-serif;
         font-size: 1rem;
-        background-color: rgba(231, 219, 219, 0.411);
+        background-color: none;
         color: black;
-        padding: 10px;
-       
-      
-        text-align: left;
+        padding: 10px 30px;
+    
         position: relative;
         
     }
@@ -1130,18 +1133,13 @@ input[type=submit]:hover {
     .class-input, .class-textarea {
         display: block;
         float: left;
-        padding: 10px 20px;
+        padding: 10px 30px;
+        
     }
 
     .class-input label {
         display: block;
         padding: 0px;
-    }
-
-    .class-submit {
-        display: block;
-        
-        padding: 10px 20px;
     }
     
     input[type=text] {
@@ -1160,7 +1158,7 @@ input[type=submit]:hover {
         font-family: 'Mukta', sans-serif;
         font-size: 1em;
         width: 100%;
-        height: 30%;
+    
         padding: 5px 10px;
         
         border: none;
