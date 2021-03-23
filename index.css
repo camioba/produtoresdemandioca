@@ -674,7 +674,7 @@ input[type=submit]:hover {
     .submenu a {
         text-decoration: none;
         display: inline-block;
-        padding: 1.2em 1.8em;
+        padding: 1.2em 1.5em;
         color: white;   
         background-color: none; 
     }
@@ -837,7 +837,7 @@ input[type=submit]:hover {
         height: 100%;
         background-image: url("banner.jpg");
         background-repeat: no-repeat;
-        background-size: 400% auto;
+        background-size: 280% auto;
         background-position: 30% 0;
         
        
