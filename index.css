@@ -951,7 +951,8 @@ input[type=submit]:hover {
     .banner-prod, .banner-benef {
         float: left;
         display: block;
-        padding: 10px 0px;
+        padding: 20px 0px;
+        margin: 10px 0px;
         height: 30%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1013,13 +1014,13 @@ input[type=submit]:hover {
     }
     .img-prod {
         margin: 10px 10px;
-        padding: 10px 0px;
+        padding: 0px;
         background-image: none;
         background-repeat: no-repeat;
         background-size: auto 500px;
         background-position: center; 
-        height: 88px; /*chutei o valor para ficar altura do txtflu*/
-        padding-bottom: 50px;
+       
+        
         background-color: none;
     }
     
