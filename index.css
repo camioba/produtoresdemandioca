@@ -830,13 +830,15 @@ input[type=submit]:hover {
     }
     
     .banner {
+        position: relative;
         z-index: 0;
         height: 100%;
-        width: 100%;
+        
         background-image: url("banner.jpg");
         background-repeat: no-repeat;
-        background-size: 230% auto;
-        background-position: 35% center;
+        background-size: 300% auto;
+        background-position: 40% 0;
+        
        
     }
     
