@@ -313,23 +313,26 @@ a {
     padding: 0px 30px;
         
 }
-
-.banner-prod, .banner-benef {
+.banner-prod {
     float: left;
     display: block;
     margin: 10px 0px;
     height: 50%;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: none; 
-}
-
-.banner-prod {
-    background-image: url("produtores.jpg");
+    background-size: 100% auto;
+    background-color: none;
+    background-image: url("produtores2.jpg");
     background-position: center;
 }
 
 .banner-benef {
+    float: left;
+    display: block;
+    margin: 10px 0px;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: none;
     background-image: url("img-benef.jpg");
     background-position: left center;
 }
