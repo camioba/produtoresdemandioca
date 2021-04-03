@@ -302,7 +302,7 @@ a {
 }
 
 .container-col100 {    
-    padding: 0px 40px;
+    padding: 0px;
   
 }
 
@@ -851,7 +851,7 @@ input[type=submit]:hover {
         background-color: none;
         padding: 30px 0px;
         margin: 0px;
-        height: 60%;
+        height: 80%;
         
     }
     
@@ -952,8 +952,19 @@ input[type=submit]:hover {
             
     }
     
-    .banner-prod, .banner-benef {
-        float: left;
+    .banner-prod {
+        display: block;
+        padding: 20px 0px;
+        margin: 50px 0px 0px 0px;
+        height: 30%;
+        background-repeat: no-repeat;
+        background-size: 120% auto;
+        background-color: none; 
+        background-image: url("produtores2.jpg");
+        background-position: left center;
+    }
+    
+    .banner-benef {
         display: block;
         padding: 20px 0px;
         margin: 50px 0px 0px 0px;
@@ -961,14 +972,6 @@ input[type=submit]:hover {
         background-repeat: no-repeat;
         background-size: cover;
         background-color: none; 
-    }
-    
-    .banner-prod {
-        background-image: url("produtores.jpg");
-        background-position: center;
-    }
-    
-    .banner-benef {
         background-image: url("img-benef.jpg");
         background-position: left center;
         
